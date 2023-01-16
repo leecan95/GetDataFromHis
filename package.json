@@ -1,0 +1,64 @@
+{
+    "name": "database-connector",
+    "version": "1.0.0",
+    "description": "My Moleculer-based microservices project",
+    "scripts": {
+        "can": "moleculer-runner --repl --hot services/**/*.service.js",
+        "start-dev": "export NODE_ENV=dev&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start-test": "export NODE_ENV=test&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start-production": "export NODE_ENV=production&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start-tamnd12": "export NODE_ENV=tamnd12&&nodemon index --ignore test/",
+        "start-dev-local": "SET NODE_ENV=local&&nodemon index --ignore test/",
+        "tuanvd10": "export NODE_ENV=tuanvd10&&moleculer-runner --repl --hot services/**/*.service.js",
+        "bangtv2": "export NODE_ENV=bangtv2&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start-duongth": "export NODE_ENV=duongth&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start-phuongnt3": "export NODE_ENV=phuongnt3&&moleculer-runner --repl --hot services/**/*.service.js",
+        "start": "moleculer-runner",
+        "cli": "moleculer connect MQTT",
+        "ci": "jest --watch",
+        "test": "jest --coverage",
+        "lint": "eslint services"
+    },
+    "keywords": [
+        "microservices",
+        "moleculer"
+    ],
+    "author": "",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "jest": "^25.1.0",
+        "jest-cli": "^25.1.0",
+        "moleculer-repl": "^0.7.0"
+    },
+    "dependencies": {
+        "aes256": "^1.1.0",
+        "axios": "^0.21.4",
+        "bcrypt": "^4.0.1",
+        "circular-json": "^0.5.9",
+        "crypto": "^1.0.1",
+        "download": "^8.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "md5": "^2.3.0",
+        "moleculer": "^0.14.0",
+        "mongodb": "^3.5.6",
+        "mongoose": "^5.9.13",
+        "mqtt": "^3.0.0",
+        "mysql2": "^2.1.0",
+        "secure-random": "^1.1.2",
+        "sequelize": "^5.21.6",
+        "winston": "^3.2.1",
+        "winston-daily-rotate-file": "^4.4.2",
+        "xlsx": "^0.18.5"
+    },
+    "engines": {
+        "node": ">= 10.x.x"
+    },
+    "jest": {
+        "coverageDirectory": "../coverage",
+        "testEnvironment": "node",
+        "rootDir": "./services",
+        "roots": [
+            "../test"
+        ]
+    }
+}
